@@ -40,9 +40,9 @@ git deploy
 
 ## Quando quiser subir para produção (master)
 ```terminal
-git checkout master
+git checkout main
 git merge desenvolvimento
-git push origin master
+git push origin main
 ```
 
 # Configurações do Python:
