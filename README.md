@@ -1,4 +1,4 @@
-Última versão: <!--version-start--> 1.0.5 <!--version-end-->
+Última versão: <!--version-start--> 1.0.6 <!--version-end-->
 
 # Linguagem Python
 Aprendendo Python na prática
