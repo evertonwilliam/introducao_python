@@ -1,0 +1,32 @@
+name: Merge desenvolvimento into master
+
+on:
+  workflow_dispatch:  # Permite execução manual via GitHub
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  merge:
+    name: Merge desenvolvimento → master
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+        with:
+          ref: master  # Faz checkout da branch master
+
+      - name: Configurar Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Obter todas as branches
+        run: git fetch origin desenvolvimento
+
+      - name: Realizar merge da branch desenvolvimento
+        run: |
+          git merge origin/desenvolvimento --no-ff -m "Merge desenvolvimento -> master via GitHub Actions"
+          git push origin master
