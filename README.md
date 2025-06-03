@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Última versão: <!--version-start--> 1.0.2 <!--version-end-->
+=======
+Última versão: <!--version-start--> 1.0.4 <!--version-end-->
+>>>>>>> desenvolvimento
 
 # Linguagem Python
 Aprendendo Python na prática
